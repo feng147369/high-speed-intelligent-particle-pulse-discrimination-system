@@ -1,0 +1,56 @@
+{
+  "source": "read2.csv",
+  "sha256": "3558d7cf9efc984fd72deab8274146418ff194bd0cb0a711c108ba80419e7e0b",
+  "captured_rows": 1024,
+  "unique_values_per_signal": {
+    "ab_chip_id[7:0]": [
+      "0xDC"
+    ],
+    "cd_chip_id[7:0]": [
+      "0xDC"
+    ],
+    "ab_mode[7:0]": [
+      "0x00"
+    ],
+    "cd_mode[7:0]": [
+      "0x00"
+    ],
+    "ab_np[7:0]": [
+      "0x2F"
+    ],
+    "cd_np[7:0]": [
+      "0x2F"
+    ],
+    "spi_cfg[7:0]": [
+      "0x00"
+    ],
+    "ab_scratch[7:0]": [
+      "0xA5"
+    ],
+    "cd_scratch[7:0]": [
+      "0x5A"
+    ],
+    "ab_scratch_again[7:0]": [
+      "0xA5"
+    ],
+    "ab_n[7:0]": [
+      "0x0D"
+    ],
+    "cd_n[7:0]": [
+      "0x0D"
+    ],
+    "scratch_ok[1:0]": [
+      "0x03"
+    ],
+    "completion_flags[7:0]": [
+      "0x0D"
+    ],
+    "spi_monitor[7:0]": [
+      "0x08"
+    ],
+    "step[5:0]": [
+      "0x17"
+    ]
+  },
+  "note": "Rows are repeated observations of latched one-shot SPI results, not independent SPI transactions."
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "FPGA高速ADC排障与脉冲AI部署"
+  short_description: "以原始码、SPI回读与活动工程对照排障，再把轻量CNN逐级部署到FPGA"
+  default_prompt: "使用 $fpga-adc-pulse-ai，先核对ADC原始码与SPI回读是否可信，再按浮点、整数、HLS/RTL逐级验证并接入事件门控。"
