@@ -1,0 +1,65 @@
+{
+  "rule": "one independent above-threshold connected interval counts as one pulse, includes window endpoints; raw >= baseline + session threshold",
+  "baseline": "median first100 raw points (200ns pretrigger estimate); not recorded FPGA dynamic baseline",
+  "priority": "any raw >=65532 -> reject; otherwise >=4 pulses -> candidate",
+  "labels": "automatic user-rule proxy; not manually confirmed event labels or physical tritium truth",
+  "thresholds_by_session": {
+    "2": 4000,
+    "3": 3500
+  },
+  "sampling": "1281 raw / 2ns, full 2.56us",
+  "no_minimum_width_or_gap_added": true,
+  "independent_sessions_tested": false,
+  "populations": {
+    "2": {
+      "rows": 13497,
+      "saturated": 8324,
+      "candidate": 4923,
+      "candidate_by_count": {
+        "0": 1,
+        "1": 11,
+        "2": 43,
+        "3": 195,
+        "4": 332,
+        "5": 406,
+        "6": 500,
+        "7": 594,
+        "8": 715
+      }
+    },
+    "3": {
+      "rows": 12258,
+      "saturated": 9418,
+      "candidate": 2485,
+      "candidate_by_count": {
+        "0": 1,
+        "1": 16,
+        "2": 92,
+        "3": 246,
+        "4": 312,
+        "5": 274,
+        "6": 235,
+        "7": 232,
+        "8": 236
+      }
+    }
+  },
+  "split": {
+    "-1": {
+      "rows": 2576,
+      "positive": 787
+    },
+    "0": {
+      "rows": 15452,
+      "positive": 4109
+    },
+    "1": {
+      "rows": 3863,
+      "positive": 1351
+    },
+    "2": {
+      "rows": 3864,
+      "positive": 1161
+    }
+  }
+}

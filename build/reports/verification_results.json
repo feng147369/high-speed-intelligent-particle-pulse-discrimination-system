@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "synthesis_run": "synth_raw_recording_20261103",
+  "implementation_run": "impl_raw_recording_20261103",
+  "new_runs_created": 0,
+  "existing_impl_runs": 7,
+  "setup_wns_ns": 0.069,
+  "hold_whs_ns": 0.052,
+  "bus_skew_constraints": 14,
+  "bus_skew_min_slack_ns": 3.195,
+  "routing_errors": 0,
+  "drc_errors": 0,
+  "drc_critical_warnings": 0,
+  "drc_warnings": 116,
+  "resources": {
+    "LUT": 40074,
+    "FF": 55472,
+    "BRAM36": 265,
+    "DSP": 318
+  },
+  "HLS_C_and_RTL_vectors": 128,
+  "raw_veto_fullcore_vectors": 24,
+  "known_simulator_reset_checker_messages": [
+    "2000",
+    "1120266000"
+  ],
+  "top_traditional": "PASS",
+  "top_AI_saturation_wave_and_spectrum_block": "PASS",
+  "host": "PASS",
+  "default_threshold_Q14": 4043,
+  "model_revision": "20261103",
+  "old_version_files_unchanged": 897,
+  "ROMs_verified_in_synthesis_run": [
+    "pulse_cnn_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_w10_Rcud.dat",
+    "pulse_cnn_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config13_s_w13_ROM_NPdEe.dat",
+    "pulse_cnn_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config15_s_w15_ROM_NPeOg.dat",
+    "pulse_cnn_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_w6_ROMbkb.dat"
+  ],
+  "bitstream_generated": false,
+  "board_contacted": false
+}

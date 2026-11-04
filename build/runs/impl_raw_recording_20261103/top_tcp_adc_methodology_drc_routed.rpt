@@ -1,0 +1,1487 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Nov  3 22:10:07 2026
+| Host         : DESKTOP-9ELPJVU running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_tcp_adc_methodology_drc_routed.rpt -pb top_tcp_adc_methodology_drc_routed.pb -rpx top_tcp_adc_methodology_drc_routed.rpx
+| Design       : top_tcp_adc
+| Device       : xc7k325tffg900-2
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 276
++-----------+----------+------------------------------------------------------+------------+
+| Rule      | Severity | Description                                          | Violations |
++-----------+----------+------------------------------------------------------+------------+
+| DPIR-1    | Warning  | Asynchronous driver check                            | 46         |
+| LUTAR-1   | Warning  | LUT drives async reset alert                         | 6          |
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain      | 25         |
+| SYNTH-6   | Warning  | Timing of a RAM block might be sub-optimal           | 12         |
+| SYNTH-10  | Warning  | Wide multiplier                                      | 72         |
+| SYNTH-12  | Warning  | DSP input not registered                             | 2          |
+| TIMING-9  | Warning  | Unknown CDC Logic                                    | 1          |
+| TIMING-10 | Warning  | Missing property on synchronizer                     | 1          |
+| TIMING-11 | Warning  | Inappropriate max delay with datapath only option    | 27         |
+| TIMING-18 | Warning  | Missing input or output delay                        | 16         |
+| TIMING-24 | Warning  | Overridden Max delay datapath only                   | 24         |
+| TIMING-28 | Warning  | Auto-derived clock referenced by a timing constraint | 5          |
+| XDCB-5    | Warning  | Runtime inefficient way to find pin objects          | 39         |
++-----------+----------+------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIR-1#1 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#2 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#3 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#4 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#5 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#6 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#7 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#8 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#9 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#10 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#11 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#12 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#13 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#14 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#15 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#16 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#17 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#18 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#19 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#20 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#21 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#22 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#23 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input pin ngamma_ttt_discriminator/total_hi_mul_r_reg/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#24 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#25 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#26 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#27 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#28 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#29 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#30 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#31 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#32 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#33 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#34 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#35 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#36 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#37 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#38 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#39 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#40 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#41 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#42 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#43 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#44 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#45 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#46 Warning
+Asynchronous driver check  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input pin ngamma_ttt_discriminator/total_x_thr_r_reg/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell dual_spectrum_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) wave_samples_s2_g_reg[10]/CLR, wave_samples_s2_g_reg[11]/CLR,
+wave_samples_s2_g_reg[12]/CLR, wave_samples_s2_g_reg[13]/CLR,
+wave_samples_s2_g_reg[14]/CLR, wave_samples_s2_g_reg[15]/CLR,
+wave_samples_s2_g_reg[1]/CLR, wave_samples_s2_g_reg[2]/CLR,
+wave_samples_s2_g_reg[3]/CLR, wave_samples_s2_g_reg[4]/CLR,
+wave_samples_s2_g_reg[5]/CLR, wave_samples_s2_g_reg[6]/CLR,
+wave_samples_s2_g_reg[7]/CLR, wave_samples_s2_g_reg[8]/PRE,
+wave_samples_s2_g_reg[9]/CLR (the first 15 of 337 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell proc_a_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) proc_a/pk_in_reg[10]/CLR, proc_a/pk_in_reg[11]/CLR,
+proc_a/pk_in_reg[12]/CLR, proc_a/pk_in_reg[13]/CLR,
+proc_a/pk_in_reg[14]/CLR, proc_a/pk_in_reg[15]/PRE,
+proc_a/pk_in_reg[1]/CLR, proc_a/pk_in_reg[2]/CLR, proc_a/pk_in_reg[3]/CLR,
+proc_a/pk_in_reg[4]/CLR, proc_a/pk_in_reg[5]/CLR, proc_a/pk_in_reg[6]/CLR,
+proc_a/pk_in_reg[7]/CLR, proc_a/pk_in_reg[8]/CLR, proc_a/pk_in_reg[9]/CLR
+ (the first 15 of 903 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell jesd204b_interface_inst/jesd204b_phy_rx_inst/inst/jesd204_phy_block_i/sync_rx_reset_all/xpm_cdc_async_rst_inst/arststages_ff_reg[4] in site SLICE_X133Y330 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jesd204b_interface_inst/jesd204b_phy_rx_inst/inst/jesd204_phy_block_i/sync_rx_reset_all/data_sync_reg_gsr is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell jesd204b_interface_inst/jesd204b_phy_rx_inst/inst/jesd204_phy_block_i/sync_rx_reset_data/xpm_cdc_async_rst_inst/arststages_ff_reg[4] in site SLICE_X133Y334 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jesd204b_interface_inst/jesd204b_phy_rx_inst/inst/jesd204_phy_block_i/sync_rx_reset_data/data_sync_reg_gsr is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell jesd204b_interface_inst/jesd204b_phy_rx_inst/inst/jesd204_phy_block_i/sync_tx_reset_all/xpm_cdc_async_rst_inst/arststages_ff_reg[4] in site SLICE_X132Y330 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jesd204b_interface_inst/jesd204b_phy_rx_inst/inst/jesd204_phy_block_i/sync_tx_reset_all/data_sync_reg_gsr is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell jesd204b_interface_inst/jesd204b_phy_rx_inst/inst/jesd204_phy_block_i/sync_tx_reset_data/xpm_cdc_async_rst_inst/arststages_ff_reg[4] in site SLICE_X132Y334 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jesd204b_interface_inst/jesd204b_phy_rx_inst/inst/jesd204_phy_block_i/sync_tx_reset_data/data_sync_reg_gsr is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X65Y271 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X66Y270 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X64Y272 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X65Y269 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X73Y272 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[10] in site SLICE_X72Y273 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[10] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X71Y274 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#12 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X75Y272 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#13 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[3] in site SLICE_X73Y274 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#14 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[4] in site SLICE_X74Y275 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[4] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#15 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[5] in site SLICE_X76Y273 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[5] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#16 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[6] in site SLICE_X77Y274 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[6] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#17 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[7] in site SLICE_X75Y274 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[7] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#18 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[8] in site SLICE_X74Y273 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[8] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#19 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[9] in site SLICE_X71Y272 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[9] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#20 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X64Y270 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#21 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X63Y270 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#22 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X62Y270 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#23 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dual_spectrum/gamma/FIFO_spectrum_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X30Y206 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell dual_spectrum/gamma/FIFO_spectrum_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#24 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dual_spectrum/neutron/FIFO_spectrum_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X50Y189 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell dual_spectrum/neutron/FIFO_spectrum_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#25 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell fifo_wave_async_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X34Y239 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell fifo_wave_async_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+SYNTH-6#1 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance ai_sidecar_inst/capture_ram_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/w10_U/q0_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#3 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/w10_U/q0_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#4 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/w10_U/q0_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#5 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/w10_U/q0_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#6 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/w6_U/q0_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#7 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/w6_U/q0_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#8 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/w6_U/q0_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#9 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/w6_U/q0_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#10 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_1u_config15_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config15_s_fu_71/w15_U/q0_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#11 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config13_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config13_s_fu_67/w13_U/q0_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#12 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance save_a/reservoir_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-10#1 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U763/buff0_reg of size 18x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#2 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U763/buff0_reg__0 of size 18x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#3 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U763/buff0_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#4 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U763/buff1_reg of size 11x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#5 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U763/buff1_reg__0 of size 11x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#6 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U763/buff1_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#7 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U763/tmp_product of size 11x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#8 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U763/tmp_product__0 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#9 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U763/tmp_product__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#10 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U764/buff0_reg of size 18x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#11 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U764/buff0_reg__0 of size 18x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#12 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U764/buff0_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#13 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U764/buff1_reg of size 11x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#14 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U764/buff1_reg__0 of size 11x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#15 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U764/buff1_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#16 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U764/tmp_product of size 11x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#17 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U764/tmp_product__0 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#18 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U764/tmp_product__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#19 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U765/buff0_reg of size 18x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#20 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U765/buff0_reg__0 of size 18x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#21 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U765/buff0_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#22 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U765/buff1_reg of size 11x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#23 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U765/buff1_reg__0 of size 11x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#24 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U765/buff1_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#25 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U765/tmp_product of size 11x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#26 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U765/tmp_product__0 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#27 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U765/tmp_product__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#28 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U766/buff0_reg of size 18x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#29 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U766/buff0_reg__0 of size 18x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#30 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U766/buff0_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#31 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U766/buff1_reg of size 11x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#32 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U766/buff1_reg__0 of size 11x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#33 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U766/buff1_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#34 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U766/tmp_product of size 11x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#35 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U766/tmp_product__0 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#36 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U766/tmp_product__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#37 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U767/buff0_reg of size 18x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#38 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U767/buff0_reg__0 of size 18x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#39 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U767/buff0_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#40 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U767/buff1_reg of size 11x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#41 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U767/buff1_reg__0 of size 11x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#42 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U767/buff1_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#43 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U767/tmp_product of size 11x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#44 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U767/tmp_product__0 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#45 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U767/tmp_product__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#46 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U768/buff0_reg of size 18x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#47 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U768/buff0_reg__0 of size 18x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#48 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U768/buff0_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#49 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U768/buff1_reg of size 11x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#50 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U768/buff1_reg__0 of size 11x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#51 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U768/buff1_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#52 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U768/tmp_product of size 11x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#53 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U768/tmp_product__0 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#54 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U768/tmp_product__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#55 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U769/buff0_reg of size 18x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#56 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U769/buff0_reg__0 of size 18x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#57 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U769/buff0_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#58 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U769/buff1_reg of size 11x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#59 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U769/buff1_reg__0 of size 11x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#60 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U769/buff1_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#61 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U769/tmp_product of size 11x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#62 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U769/tmp_product__0 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#63 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U769/tmp_product__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#64 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U770/buff0_reg of size 18x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#65 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U770/buff0_reg__0 of size 18x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#66 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U770/buff0_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#67 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U770/buff1_reg of size 11x14, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#68 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U770/buff1_reg__0 of size 11x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#69 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U770/buff1_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#70 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U770/tmp_product of size 11x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#71 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U770/tmp_product__0 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#72 Warning
+Wide multiplier  
+Detected multiplier at ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U770/tmp_product__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-12#1 Warning
+DSP input not registered  
+DSP instance ngamma_ttt_discriminator/total_hi_mul_r_reg is not fully pipelined on the input side. AREG/BREG/CREG/DREG are not used.
+Related violations: <none>
+
+SYNTH-12#2 Warning
+DSP input not registered  
+DSP instance ngamma_ttt_discriminator/total_x_thr_r_reg is not fully pipelined on the input side. AREG/BREG/CREG/DREG are not used.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-11#1 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_0/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_0/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#2 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_1/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_1/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#3 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_10/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_10/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#4 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_2/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_2/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#5 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_3/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_3/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#6 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_4/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_4/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#7 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_5/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_5/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#8 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_6/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_6/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#9 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_7/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_7/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#10 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_8/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_8/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#11 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_9/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_9/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#12 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_0/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_0/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#13 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_1/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_1/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#14 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_10/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_10/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#15 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_2/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_2/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#16 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_3/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_3/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#17 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_4/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_4/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#18 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_5/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_5/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#19 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_6/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_6/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#20 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_7/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_7/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#21 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_8/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_8/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#22 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_9/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_9/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#23 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/memRdReq_0/C and SiTCP/SiTCP/GMII/GMII_TXBUF/irMemRdReq_0/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#24 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/memRdReq_1/C and SiTCP/SiTCP/GMII/GMII_TXBUF/irMemRdReq_0/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#25 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/muxEndTgl/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpMuxTrnsEnd_0/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#26 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/orRdAct_0/C and SiTCP/SiTCP/GMII/GMII_TXBUF/irRdAct_0/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#27 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/orRdAct_1/C and SiTCP/SiTCP/GMII/GMII_TXBUF/irRdAct_1/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on PHY_RXD[0] relative to clock(s) PHY_RX_CLK
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on PHY_RXD[1] relative to clock(s) PHY_RX_CLK
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on PHY_RXD[2] relative to clock(s) PHY_RX_CLK
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on PHY_RXD[3] relative to clock(s) PHY_RX_CLK
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on PHY_RX_CTRL relative to clock(s) PHY_RX_CLK
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on jesd_sysref_n relative to clock(s) jesd_sys_clk
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on jesd_sysref_p relative to clock(s) jesd_sys_clk
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on AD9694_SPI_CS relative to clock(s) SYS_CLK_P
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on AD9694_SPI_SCLK relative to clock(s) SYS_CLK_P
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on AD9694_SPI_SDIO relative to clock(s) SYS_CLK_P
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on AD9694_SYNC1_P relative to clock(s) jesd_sys_clk
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on AD9694_SYNC2_P relative to clock(s) jesd_sys_clk
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on LMK04828_SPI_CLK relative to clock(s) SYS_CLK_P
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on LMK04828_SPI_CS relative to clock(s) SYS_CLK_P
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on LMK04828_SPI_RESET relative to clock(s) SYS_CLK_P
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on LMK04828_SPI_SDIO relative to clock(s) SYS_CLK_P
+Related violations: <none>
+
+TIMING-24#1 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks PHY_RX_CLK and clk_out1_clk_wiz_0 overrides a set_max_delay -datapath_only (position 554). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#2 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks PHY_RX_CLK and clk_out1_clk_wiz_0 overrides a set_max_delay -datapath_only (position 555). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#3 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks PHY_RX_CLK and clk_out4_clk_wiz_0 overrides a set_max_delay -datapath_only (position 537). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#4 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_clk_wiz_0 and PHY_RX_CLK overrides a set_max_delay -datapath_only (position 540). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#5 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_clk_wiz_0 and PHY_RX_CLK overrides a set_max_delay -datapath_only (position 541). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#6 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_clk_wiz_0 and PHY_RX_CLK overrides a set_max_delay -datapath_only (position 542). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#7 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_clk_wiz_0 and PHY_RX_CLK overrides a set_max_delay -datapath_only (position 543). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#8 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_clk_wiz_0 and PHY_RX_CLK overrides a set_max_delay -datapath_only (position 544). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#9 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_clk_wiz_0 and PHY_RX_CLK overrides a set_max_delay -datapath_only (position 545). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#10 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_clk_wiz_0 and PHY_RX_CLK overrides a set_max_delay -datapath_only (position 546). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#11 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_clk_wiz_0 and PHY_RX_CLK overrides a set_max_delay -datapath_only (position 547). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#12 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_clk_wiz_0 and PHY_RX_CLK overrides a set_max_delay -datapath_only (position 548). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#13 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_clk_wiz_0 and PHY_RX_CLK overrides a set_max_delay -datapath_only (position 549). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#14 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_clk_wiz_0 and PHY_RX_CLK overrides a set_max_delay -datapath_only (position 550). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#15 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_clk_wiz_0 and jesd_sys_clk overrides a set_max_delay -datapath_only (position 570). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#16 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_clk_wiz_0 and jesd_sys_clk overrides a set_max_delay -datapath_only (position 572). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#17 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_clk_wiz_0 and jesd_sys_clk overrides a set_max_delay -datapath_only (position 574). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#18 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_clk_wiz_0 and jesd_sys_clk overrides a set_max_delay -datapath_only (position 584). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#19 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks jesd_sys_clk and clk_out4_clk_wiz_0 overrides a set_max_delay -datapath_only (position 566). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#20 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks jesd_sys_clk and clk_out4_clk_wiz_0 overrides a set_max_delay -datapath_only (position 568). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#21 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks jesd_sys_clk and clk_out4_clk_wiz_0 overrides a set_max_delay -datapath_only (position 576). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#22 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks jesd_sys_clk and clk_out4_clk_wiz_0 overrides a set_max_delay -datapath_only (position 578). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#23 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks jesd_sys_clk and clk_out4_clk_wiz_0 overrides a set_max_delay -datapath_only (position 580). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#24 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 536 in the Timing Constraints window in Vivado IDE) between clocks jesd_sys_clk and clk_out4_clk_wiz_0 overrides a set_max_delay -datapath_only (position 582). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-28#1 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out1_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 530 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins clk_wiz_0_inst/inst/mmcm_adv_inst/CLKOUT0]
+Related violations: <none>
+
+TIMING-28#2 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out1_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 531 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins clk_wiz_0_inst/inst/mmcm_adv_inst/CLKOUT0]
+Related violations: <none>
+
+TIMING-28#3 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out2_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 532 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins clk_wiz_0_inst/inst/mmcm_adv_inst/CLKOUT1]
+Related violations: <none>
+
+TIMING-28#4 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out4_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 533 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins clk_wiz_0_inst/inst/mmcm_adv_inst/CLKOUT3]
+Related violations: <none>
+
+TIMING-28#5 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out4_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 534 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins clk_wiz_0_inst/inst/mmcm_adv_inst/CLKOUT3]
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */GMII_RXBUF/cmpWrAddr*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '537' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 187)
+Related violations: <none>
+
+XDCB-5#2 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */GMII_RXCNT/orMacPause/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '555' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 205)
+Related violations: <none>
+
+XDCB-5#3 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */GMII_RXCNT/orMacTim*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '554' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 204)
+Related violations: <none>
+
+XDCB-5#4 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */GMII_TXBUF/dlyBank0LastWrAddr*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '551' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 201)
+Related violations: <none>
+
+XDCB-5#5 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */GMII_TXBUF/dlyBank1LastWrAddr*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '552' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 202)
+Related violations: <none>
+
+XDCB-5#6 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */GMII_TXBUF/memRdReq*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '553' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 203)
+Related violations: <none>
+
+XDCB-5#7 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */GMII_TXBUF/muxEndTgl/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '539' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 189)
+Related violations: <none>
+
+XDCB-5#8 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */GMII_TXBUF/orRdAct*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '538' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 188)
+Related violations: <none>
+
+XDCB-5#9 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT/SiTCP_RESET_OUT/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '556' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 206)
+Related violations: <none>
+
+XDCB-5#10 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX10Data*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '540' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 190)
+Related violations: <none>
+
+XDCB-5#11 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX12Data*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '541' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 191)
+Related violations: <none>
+
+XDCB-5#12 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX13Data*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '542' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 192)
+Related violations: <none>
+
+XDCB-5#13 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX14Data*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '543' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 193)
+Related violations: <none>
+
+XDCB-5#14 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX15Data*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '544' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 194)
+Related violations: <none>
+
+XDCB-5#15 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX16Data*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '545' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 195)
+Related violations: <none>
+
+XDCB-5#16 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX17Data*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '546' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 196)
+Related violations: <none>
+
+XDCB-5#17 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX18Data*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '547' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 197)
+Related violations: <none>
+
+XDCB-5#18 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX19Data*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '548' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 198)
+Related violations: <none>
+
+XDCB-5#19 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX1AData*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '549' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 199)
+Related violations: <none>
+
+XDCB-5#20 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX1BData*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '550' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 200)
+Related violations: <none>
+
+XDCB-5#21 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXBUF/smpWrStatusAddr*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '537' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 187)
+Related violations: <none>
+
+XDCB-5#22 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/irMacFlowEnb/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '540' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 190)
+Related violations: <none>
+
+XDCB-5#23 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyIp*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '547' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 197)
+Related violations: <none>
+
+XDCB-5#24 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyIp*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '548' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 198)
+Related violations: <none>
+
+XDCB-5#25 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyIp*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '549' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 199)
+Related violations: <none>
+
+XDCB-5#26 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyIp*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '550' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 200)
+Related violations: <none>
+
+XDCB-5#27 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyMac*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '541' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 191)
+Related violations: <none>
+
+XDCB-5#28 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyMac*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '542' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 192)
+Related violations: <none>
+
+XDCB-5#29 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyMac*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '543' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 193)
+Related violations: <none>
+
+XDCB-5#30 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyMac*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '544' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 194)
+Related violations: <none>
+
+XDCB-5#31 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyMac*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '545' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 195)
+Related violations: <none>
+
+XDCB-5#32 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyMac*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '546' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 196)
+Related violations: <none>
+
+XDCB-5#33 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_TXBUF/irMemRdReq*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '553' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 203)
+Related violations: <none>
+
+XDCB-5#34 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_TXBUF/irRdAct*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '538' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 188)
+Related violations: <none>
+
+XDCB-5#35 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_TXBUF/rsmpBank0LastWrAddr*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '551' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 201)
+Related violations: <none>
+
+XDCB-5#36 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_TXBUF/rsmpBank1LastWrAddr*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '552' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 202)
+Related violations: <none>
+
+XDCB-5#37 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_TXBUF/rsmpMuxTrnsEnd*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '539' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 189)
+Related violations: <none>
+
+XDCB-5#38 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_TXCNT/irMacPauseExe_0/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '555' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 205)
+Related violations: <none>
+
+XDCB-5#39 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_TXCNT/irMacPauseTime*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '554' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/fpga/one_channel/v14/one_channel_neutron_gamma_waveform.srcs/constrs_1/new/PIN.xdc (Line: 204)
+Related violations: <none>
+
+

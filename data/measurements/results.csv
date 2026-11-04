@@ -1,0 +1,7 @@
+metric,value,unit,condition
+background_rate,0.36,cps,
+sample_rate,160.24,cps,
+net_rate,159.88,cps,
+efficiency,0.04,percent,
+detection_limit,3255,Bq/L,4 h
+stability_rsd,0.96,percent,12 h

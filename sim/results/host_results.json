@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "board_contacted": false,
+  "RTL_modified": false,
+  "bitstream_update_required": false,
+  "tests": [
+    "V14_HOST_PASS",
+    "V14_RAW_RECORDER_PASS",
+    "V14_TIMESTAMP_HOST_PASS",
+    "V14_AI_PAGE4_PASS"
+  ]
+}

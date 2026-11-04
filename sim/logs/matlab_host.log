@@ -1,0 +1,5 @@
+V14_HOST_PASS split/coalesced packets, resync, zero N, uint32 spectrum, four-tab UI, UDP chunking, signed scores, paired capture, enable restore
+RAW_UI_BENCHMARK frames=3201 feed_seconds=1.117 frames_per_second=2865.9
+V14_RAW_RECORDER_PASS uint16 exactness, 500+17 segmentation, time flush, metadata/UTF8, unique sessions, wrong-size stop, no overwrite/retry, UI fragmented/coalesced 3201-frame (>8 MB) save
+V14_TIMESTAMP_HOST_PASS new/legacy parsing, split/coalesced/resync, 48-bit rollover/reset, event rate, view buttons preserve state, MAT timestamps
+V14_AI_PAGE4_PASS traditional isolation, AI wave, sum of two FPGA buckets, cumulative replacement, mode clear, disconnect clear, pause freeze

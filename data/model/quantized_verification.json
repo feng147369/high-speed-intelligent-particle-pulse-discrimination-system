@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "weight_bits": 12,
+  "weight_frac": 8,
+  "activation_bits": 24,
+  "activation_frac": 14,
+  "torch_numpy_max_abs_error": 4.480063882539298e-06,
+  "export_threshold_Q14": 4043,
+  "export_threshold_logit": 0.24676513671875,
+  "temporal_holdout_rows": 3864,
+  "reference": "automatic waveform-rule labels, NOT independent physical tritium labels",
+  "cnn_only": {
+    "TP": 977,
+    "FN": 184,
+    "FP": 90,
+    "TN": 2613,
+    "recall": 0.8415159345391904,
+    "precision": 0.915651358950328,
+    "negative_false_positive": 0.033296337402885685
+  },
+  "cnn_plus_RAW_saturation_veto": {
+    "TP": 977,
+    "FN": 184,
+    "FP": 10,
+    "TN": 2693,
+    "recall": 0.8415159345391904,
+    "precision": 0.9898682877406282,
+    "negative_false_positive": 0.003699593044765076
+  },
+  "old_model_default_zero": {
+    "TP": 214,
+    "FN": 947,
+    "FP": 561,
+    "TN": 2142,
+    "recall": 0.1843238587424634,
+    "precision": 0.2761290322580645,
+    "negative_false_positive": 0.20754716981132076
+  },
+  "old_model_plus_RAW_saturation_veto": {
+    "TP": 214,
+    "FN": 947,
+    "FP": 0,
+    "TN": 2703,
+    "recall": 0.1843238587424634,
+    "precision": 1.0,
+    "negative_false_positive": 0.0
+  },
+  "quant_float_decision_agreement": 0.9976708074534162,
+  "quant_float_max_logit_error": 0.6162109375,
+  "raw_saturation_veto_deployed": false,
+  "RTL_tested": false,
+  "deployed_weights_modified": false,
+  "seconds": 2.177035699998669,
+  "integer_references_exact_on_probes": true,
+  "validation_by_group": {
+    "saturated": {
+      "rows": 2407,
+      "passed": 77
+    },
+    "unsaturated_0_to_3": {
+      "rows": 105,
+      "passed": 14
+    },
+    "rule_positive": {
+      "rows": 1351,
+      "passed": 1082
+    }
+  },
+  "temporal_holdout_by_group": {
+    "saturated": {
+      "rows": 2637,
+      "passed": 80
+    },
+    "unsaturated_0_to_3": {
+      "rows": 66,
+      "passed": 10
+    },
+    "rule_positive": {
+      "rows": 1161,
+      "passed": 977
+    }
+  }
+}

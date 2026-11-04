@@ -1,0 +1,18 @@
+{
+  "dataset": "four_waveform_groups",
+  "acquisition_date_start": "2026-09-07",
+  "acquisition_date_end": "2026-09-15",
+  "groups": [
+    "1",
+    "2",
+    "3",
+    "6"
+  ],
+  "event_fields": [
+    "frame_index_1based",
+    "channel",
+    "count",
+    "timestamp_raw"
+  ],
+  "timestamp_raw_meaning": "Original device counter; retained without calendar conversion"
+}

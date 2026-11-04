@@ -1,0 +1,82 @@
+{
+  "scope": "AI demo, waveform-model training, fixed-point verification, HLS/RTL and event-level inference integration only",
+  "compiled_on": "2026-11-04",
+  "evidence_type": "Selected existing results; no training, simulation or implementation rerun during skill extraction",
+  "generic_demo": {
+    "vectors": 128,
+    "outputs_compared": 640,
+    "floating_class_agreement": 128,
+    "rtl_csim_output_logs_equal": true,
+    "tool_version": "2026.1"
+  },
+  "generic_demo_interpretation": "Numerical toolchain validation, not target classification accuracy",
+  "training": {
+    "new_measurement_rows": 25755,
+    "architecture": "existing long_context CNN 8/8/8 k5/9/15 GAP Dense8",
+    "parameters": 1729,
+    "seed": 20261103,
+    "selected_epoch": 28,
+    "split": "blocked temporal within two sessions, 5% embargo gaps; no independent acquisition test",
+    "label_source": "automatic user rule: >=4 threshold excursions and no upper clipping; not independent particle labels"
+  },
+  "fixed_point": {
+    "weight_bits": 12,
+    "weight_frac": 8,
+    "activation_bits": 24,
+    "activation_frac": 14,
+    "export_threshold_Q14": 4043,
+    "export_threshold_logit": 0.24676513671875,
+    "torch_numpy_max_abs_error": 4.480063882539298e-06,
+    "integer_references_exact_on_probes": true,
+    "quant_float_decision_agreement": 0.9976708074534162,
+    "temporal_holdout_rows": 3864,
+    "reference": "automatic waveform-rule labels, NOT independent physical tritium labels",
+    "cnn_only": {
+      "TP": 977,
+      "FN": 184,
+      "FP": 90,
+      "TN": 2613,
+      "recall": 0.8415159345391904,
+      "precision": 0.915651358950328,
+      "negative_false_positive": 0.033296337402885685
+    },
+    "cnn_plus_RAW_saturation_veto": {
+      "TP": 977,
+      "FN": 184,
+      "FP": 10,
+      "TN": 2693,
+      "recall": 0.8415159345391904,
+      "precision": 0.9898682877406282,
+      "negative_false_positive": 0.003699593044765076
+    },
+    "temporal_holdout_by_group": {
+      "saturated": {
+        "rows": 2637,
+        "passed": 80
+      },
+      "unsaturated_0_to_3": {
+        "rows": 66,
+        "passed": 10
+      },
+      "rule_positive": {
+        "rows": 1161,
+        "passed": 977
+      }
+    }
+  },
+  "later_AI_integration": {
+    "status": "PASS",
+    "HLS_C_and_RTL_vectors": 128,
+    "raw_veto_fullcore_vectors": 24,
+    "top_AI_saturation_wave_and_spectrum_block": "PASS",
+    "default_threshold_Q14": 4043,
+    "model_revision": "20261103"
+  },
+  "artifact_timeline_note": "Software-stage not-deployed flags describe their historical stage. Later integration is recorded separately; original reports are not rewritten.",
+  "board_feedback": {
+    "source": "User statement in this conversation",
+    "reported_on": "2026-11-04",
+    "quote": "不用检查了，我已经实测了，整个系统跑通了",
+    "interpretation": "User-confirmed running chain; no new numeric classification or independent physical truth measurements supplied"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "Historical simulator result excerpts, not rerun during skill packaging",
+  "results": {
+    "CASE=0": [
+      "PASS CASE=0: initial ID=dc MODE=07 preserved; exactly four read frames; no reset/index/config writes; raw frames and mid sampling agree; flags=3D; bus remains idle"
+    ],
+    "CASE=1": [
+      "PASS CASE=1: initial ID=db MODE=00 preserved; exactly four read frames; no reset/index/config writes; raw frames and mid sampling agree; flags=3D; bus remains idle"
+    ],
+    "CASE=2": [
+      "PASS CASE=2: initial ID=dc MODE=08 preserved; exactly four read frames; no reset/index/config writes; raw frames and mid sampling agree; flags=3D; bus remains idle"
+    ]
+  }
+}

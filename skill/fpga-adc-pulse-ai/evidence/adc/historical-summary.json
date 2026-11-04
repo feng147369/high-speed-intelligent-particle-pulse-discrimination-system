@@ -1,0 +1,156 @@
+{
+  "assembled_on": "2026-11-04",
+  "evidence_type": "saved historical artifacts, not a fresh hardware test",
+  "source_manifest": {
+    "codex_diagnostics/20261018_real9694/summary.json": {
+      "sha256": "f61db09bfa40319de902e3d39ccd4f12c468362313203e87cc4a81c06da3b903",
+      "bytes": 7392
+    },
+    "codex_diagnostics/20261018_v10_vs_demo/audit.json": {
+      "sha256": "32ab7b9a65441061e8d78a278bc91041a4fd4c391f06ded968dc275858acd99b",
+      "bytes": 6288
+    },
+    "codex_diagnostics/20261018_v10_vs_demo/sim/v10_adc_table_check.log": {
+      "sha256": "960a5f5bee6e9fe33d1d7c82d8da642eac60716225a2e02e173ca14e4240ccdc",
+      "bytes": 1382
+    },
+    "codex_diagnostics/20261018_SYSREF_hardware/实物改动与支路记录.md": {
+      "sha256": "dd234b77b7ce3bc5d0890677baa59cfad59215f60637bc4ac3da0e7ba0c58578",
+      "bytes": 4414
+    }
+  },
+  "historical_adc": {
+    "rows": 16384,
+    "A": {
+      "min": 345,
+      "max": 4693,
+      "unique": 2730,
+      "low5_patterns": 32,
+      "low5_nonzero": 16014,
+      "rail_plus": 0,
+      "rail_minus": 0,
+      "mean": 1164.9738159179688,
+      "sd": 1322.0119436250727
+    },
+    "periodic_checks": {
+      "assumed_adc_sample_rate_hz": 500000000,
+      "sample_rate_basis": "current XDC JESD clock 250 MHz; two ADC samples per ILA clock",
+      "record_duration_us": 65.536,
+      "detected_pulses": 33,
+      "full_periods": 32,
+      "period_samples": 1000,
+      "period_us": 2.0,
+      "peak_mean": 4682.939393939394,
+      "peak_sd": 3.8920228746672296,
+      "peak_min": 4676,
+      "peak_max": 4693,
+      "baseline_window": "phase 700..949 of each 1000-sample period",
+      "baseline_median": 371.0,
+      "baseline_sd_including_repeatable_shape": 8.299591020609087,
+      "rms_deviation_from_mean_pulse": 6.036179494566492,
+      "max_abs_deviation_from_mean_pulse": 27.625,
+      "half_height_width_us_approx": 0.338,
+      "limitations": "Analog waveform cannot prove zero rare bit errors or dropped samples outside this 65.536 us record; no rx_tvalid/error flags in export."
+    }
+  },
+  "historical_comparison": {
+    "adc_register_diffs": [
+      {
+        "index": 4,
+        "v10": "1D0C01",
+        "demo": "000803"
+      },
+      {
+        "index": 12,
+        "v10": "1D0D01",
+        "demo": "000803"
+      },
+      {
+        "index": 13,
+        "v10": "1C2C02",
+        "demo": "000803"
+      },
+      {
+        "index": 14,
+        "v10": "1D03B0",
+        "demo": "000803"
+      },
+      {
+        "index": 15,
+        "v10": "1D020B",
+        "demo": "000803"
+      },
+      {
+        "index": 16,
+        "v10": "1CC017",
+        "demo": "000803"
+      },
+      {
+        "index": 17,
+        "v10": "1C8008",
+        "demo": "000803"
+      },
+      {
+        "index": 18,
+        "v10": "1CC601",
+        "demo": "000803"
+      },
+      {
+        "index": 22,
+        "v10": "1C8B01",
+        "demo": "000803"
+      },
+      {
+        "index": 40,
+        "v10": "1CF702",
+        "demo": "000803"
+      },
+      {
+        "index": 43,
+        "v10": "1B8510",
+        "demo": "000803"
+      },
+      {
+        "index": 44,
+        "v10": "1B0138",
+        "demo": "000803"
+      },
+      {
+        "index": 47,
+        "v10": "022946",
+        "demo": "000803"
+      }
+    ],
+    "jesd_register_diffs": [
+      {
+        "word": "3",
+        "v10": {
+          "addr": "010",
+          "data": "00000001"
+        },
+        "demo": {
+          "addr": "010",
+          "data": "00000000"
+        }
+      },
+      {
+        "word": "7",
+        "v10": {
+          "addr": "028",
+          "data": "00000001"
+        },
+        "demo": {
+          "addr": "028",
+          "data": "0000000F"
+        }
+      }
+    ],
+    "lmk_table_equal": true,
+    "rx_ip_parameter_diffs": [],
+    "phy_ip_parameter_diffs": []
+  },
+  "historical_simulation_pass_lines": [
+    "PASS: v10 original SPI engine emitted all 48 working-demo ADC words; soft-reset wait >=5ms; no repeated init; original ports retained."
+  ],
+  "hardware_correction": "Local project note dated 2026-10-19 corrects the earlier capacitor claim to two 240-ohm shunt resistors to GND. The corresponding original user turn is not visible here."
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "summary": "BINARY_DEFAULT_THRESHOLD_PASS powerup/FA4043, signed CMD35 override",
+  "log": "D:\\fpga\\one_channel\\v14\\verification_binary_20261103\\sim\\default_threshold\\simulation.log",
+  "source_sha256": {
+    "D:\\fpga\\one_channel\\v14\\one_channel_neutron_gamma_waveform.srcs\\sources_1\\new\\command_parser_9byte.v": "1cf7cdbecae38a7f943e9032abad97121e14da95dedf87b7f8fa4d4602b0d64a",
+    "D:\\fpga\\one_channel\\v14\\verification_binary_20261103\\tb_default_threshold.sv": "9061d144f824a1f68b86ef2790b363e9e9b3261804bce8132e76d04c79c0679a"
+  }
+}

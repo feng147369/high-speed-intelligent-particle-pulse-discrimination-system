@@ -1,0 +1,7 @@
+*.jou
+.Xil/
+*.zip
+build/project/*.cache/
+build/project/*.gen/
+build/project/*.ip_user_files/
+build/project/*.sim/

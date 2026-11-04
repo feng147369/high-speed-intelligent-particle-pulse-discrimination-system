@@ -1,0 +1,638 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Nov  3 22:12:05 2026
+| Host         : DESKTOP-9ELPJVU running 64-bit major release  (build 9200)
+| Command      : report_drc -file D:/fpga/one_channel/v14/verification_binary_20261103/drc.rpt
+| Design       : top_tcp_adc
+| Device       : xc7k325tffg900-2
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: impl_raw_recording_20261103
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 116
++-----------+----------+----------------------------+------------+
+| Rule      | Severity | Description                | Violations |
++-----------+----------+----------------------------+------------+
+| CHECK-3   | Warning  | Report rule limit reached  | 2          |
+| DPIP-1    | Warning  | Input pipelining           | 42         |
+| DPOP-1    | Warning  | PREG Output pipelining     | 9          |
+| DPOP-2    | Warning  | MREG Output pipelining     | 19         |
+| PDCN-1569 | Warning  | LUT equation term check    | 3          |
+| REQP-1839 | Warning  | RAMB36 async control check | 20         |
+| REQP-1840 | Warning  | RAMB18 async control check | 20         |
+| RTSTAT-10 | Warning  | No routable loads          | 1          |
++-----------+----------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+CHECK-3#2 Warning
+Report rule limit reached  
+REQP-1840 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_1u_array_ap_fixed_24_10_5_3_0_8u_config2_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config2_s_fu_58/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config2_mult_s_fu_88/mac_muladd_24s_9s_29s_32_4_1_U28/pulse_cnn_mac_muladd_24s_9s_29s_32_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_1u_array_ap_fixed_24_10_5_3_0_8u_config2_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config2_s_fu_58/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config2_mult_s_fu_88/mac_muladd_24s_9s_29s_32_4_1_U28/pulse_cnn_mac_muladd_24s_9s_29s_32_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_1u_array_ap_fixed_24_10_5_3_0_8u_config2_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config2_s_fu_58/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config2_mult_s_fu_88/mac_muladd_24s_9s_32s_32_4_1_U33/pulse_cnn_mac_muladd_24s_9s_32s_32_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_1u_array_ap_fixed_24_10_5_3_0_8u_config2_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config2_s_fu_58/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config2_mult_s_fu_88/mac_muladd_24s_9s_32s_32_4_1_U33/pulse_cnn_mac_muladd_24s_9s_32s_32_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_36s_37_4_1_U585/pulse_cnn_mac_muladd_24s_12s_36s_37_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_36s_37_4_1_U585/pulse_cnn_mac_muladd_24s_12s_36s_37_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_38_4_1_U586/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_38_4_1_U586/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_38_4_1_U588/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_38_4_1_U588/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_38_4_1_U590/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_38_4_1_U590/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_38_4_1_U592/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_38_4_1_U592/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_38_4_1_U592/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_38_4_1_U592/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_38_4_1_U594/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_38_4_1_U594/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_38_4_1_U596/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_38_4_1_U596/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_38_4_1_U598/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_38_4_1_U598/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_38_4_1_U600/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_38_4_1_U600/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp10310_i_reg_10380_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp10310_i_reg_10380_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp10310_i_reg_10380_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp10310_i_reg_10380_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp1188_i_reg_10385_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp1188_i_reg_10385_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp1188_i_reg_10385_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp1188_i_reg_10385_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp1322_i_reg_10350_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp1322_i_reg_10350_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp1322_i_reg_10350_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp1322_i_reg_10350_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp2820_i_reg_10355_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp2820_i_reg_10355_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp2820_i_reg_10355_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp2820_i_reg_10355_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp4318_i_reg_10360_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp4318_i_reg_10360_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp4318_i_reg_10360_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp4318_i_reg_10360_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp5816_i_reg_10365_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp5816_i_reg_10365_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp5816_i_reg_10365_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp5816_i_reg_10365_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp7314_i_reg_10370_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp7314_i_reg_10370_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp7314_i_reg_10370_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp7314_i_reg_10370_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp8812_i_reg_10375_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp8812_i_reg_10375_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp8812_i_reg_10375_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/tmp8812_i_reg_10375_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_12s_37s_38_4_1_U227/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_12s_37s_38_4_1_U227/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_12s_37s_38_4_1_U230/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_12s_37s_38_4_1_U230/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_12s_37s_38_4_1_U233/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_12s_37s_38_4_1_U233/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_12s_37s_38_4_1_U236/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_12s_37s_38_4_1_U236/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#33 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_12s_37s_38_4_1_U239/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_12s_37s_38_4_1_U239/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#34 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_12s_37s_38_4_1_U242/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_12s_37s_38_4_1_U242/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#35 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_12s_37s_38_4_1_U245/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_12s_37s_38_4_1_U245/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#36 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_12s_37s_38_4_1_U248/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_12s_37s_38_4_1_U248/pulse_cnn_mac_muladd_24s_12s_37s_38_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#37 Warning
+Input pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_8s_36s_36_4_1_U250/pulse_cnn_mac_muladd_24s_8s_36s_36_4_1_DSP48_0_U/p_reg_reg input ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_8s_36s_36_4_1_U250/pulse_cnn_mac_muladd_24s_8s_36s_36_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#38 Warning
+Input pipelining  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input ngamma_ttt_discriminator/total_hi_mul_r_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#39 Warning
+Input pipelining  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg input ngamma_ttt_discriminator/total_hi_mul_r_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#40 Warning
+Input pipelining  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input ngamma_ttt_discriminator/total_x_thr_r_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#41 Warning
+Input pipelining  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input ngamma_ttt_discriminator/total_x_thr_r_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#42 Warning
+Input pipelining  
+DSP ngamma_ttt_discriminator/total_x_thr_r_reg input ngamma_ttt_discriminator/total_x_thr_r_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_37_4_1_U593/pulse_cnn_mac_muladd_24s_12s_37s_37_4_1_DSP48_0_U/p_reg_reg output ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config10_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config10_s_fu_320/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config10_mult_s_fu_593/mac_muladd_24s_12s_37s_37_4_1_U593/pulse_cnn_mac_muladd_24s_12s_37s_37_4_1_DSP48_0_U/p_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U763/tmp_product output ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U763/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U764/tmp_product output ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U764/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U765/tmp_product output ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U765/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U766/tmp_product output ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U766/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U767/tmp_product output ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U767/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U768/tmp_product output ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U768/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U769/tmp_product output ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U769/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U770/tmp_product output ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U770/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_8s_36s_36_4_1_U250/pulse_cnn_mac_muladd_24s_8s_36s_36_4_1_DSP48_0_U/m_reg_reg multiplier stage ai_sidecar_inst/cnn_inst/conv_1d_cl_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config6_U0/grp_compute_output_buffer_1d_array_array_ap_fixed_24_10_5_3_0_8u_config6_s_fu_224/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config6_mult_s_fu_407/mac_muladd_24s_8s_36s_36_4_1_U250/pulse_cnn_mac_muladd_24s_8s_36s_36_4_1_DSP48_0_U/m_reg_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_1u_config15_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config15_s_fu_71/mul_ln58_reg_530_reg multiplier stage ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_1u_config15_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config15_s_fu_71/mul_ln58_reg_530_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config13_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config13_s_fu_67/mul_ln73_100_reg_1103_reg multiplier stage ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config13_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config13_s_fu_67/mul_ln73_100_reg_1103_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config13_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config13_s_fu_67/mul_ln73_101_reg_1108_reg multiplier stage ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config13_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config13_s_fu_67/mul_ln73_101_reg_1108_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config13_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config13_s_fu_67/mul_ln73_102_reg_1113_reg multiplier stage ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config13_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config13_s_fu_67/mul_ln73_102_reg_1113_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config13_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config13_s_fu_67/mul_ln73_103_reg_1118_reg multiplier stage ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config13_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config13_s_fu_67/mul_ln73_103_reg_1118_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config13_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config13_s_fu_67/mul_ln73_104_reg_1123_reg multiplier stage ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config13_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config13_s_fu_67/mul_ln73_104_reg_1123_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config13_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config13_s_fu_67/mul_ln73_105_reg_1128_reg multiplier stage ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config13_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config13_s_fu_67/mul_ln73_105_reg_1128_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config13_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config13_s_fu_67/mul_ln73_99_reg_1098_reg multiplier stage ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config13_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config13_s_fu_67/mul_ln73_99_reg_1098_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config13_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config13_s_fu_67/mul_ln73_reg_1093_reg multiplier stage ai_sidecar_inst/cnn_inst/dense_array_ap_fixed_8u_array_ap_fixed_24_10_5_3_0_8u_config13_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_24_10_5_3_0_config13_s_fu_67/mul_ln73_reg_1093_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U763/buff0_reg__1 multiplier stage ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U763/buff0_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U764/buff0_reg__1 multiplier stage ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U764/buff0_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U765/buff0_reg__1 multiplier stage ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U765/buff0_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U766/buff0_reg__1 multiplier stage ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U766/buff0_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U767/buff0_reg__1 multiplier stage ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U767/buff0_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U768/buff0_reg__1 multiplier stage ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U768/buff0_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#17 Warning
+MREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U769/buff0_reg__1 multiplier stage ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U769/buff0_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#18 Warning
+MREG Output pipelining  
+DSP ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U770/buff0_reg__1 multiplier stage ai_sidecar_inst/cnn_inst/global_pooling1d_cl_array_array_ap_fixed_24_10_5_3_0_8u_config12_U0/mul_45s_47ns_91_5_1_U770/buff0_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#19 Warning
+MREG Output pipelining  
+DSP ngamma_ttt_discriminator/total_hi_mul_r_reg multiplier stage ngamma_ttt_discriminator/total_hi_mul_r_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDCN-1569#1 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I1) is not included in the LUT equation: 'O5=(A2*A5)+(A2*(~A5)*(~A1))+((~A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#2 Warning
+LUT equation term check  
+Used physical LUT pin 'A4' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I0) is not included in the LUT equation: 'O5=(A2*A5)+(A2*(~A5)*(~A1))+((~A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#3 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A4))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM/ADDRBWRADDR[10] (net: SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr[7]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr_7) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM/ADDRBWRADDR[11] (net: SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr[8]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr_8) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM/ADDRBWRADDR[12] (net: SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr[9]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr_9) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM/ADDRBWRADDR[13] (net: SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr[10]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr_10) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM/ADDRBWRADDR[14] (net: SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr[11]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr_11) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM/ADDRBWRADDR[3] (net: SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr[0]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr_0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM/ADDRBWRADDR[4] (net: SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr[1]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr_1) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM/ADDRBWRADDR[5] (net: SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr[2]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM/ADDRBWRADDR[6] (net: SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr[3]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr_3) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM/ADDRBWRADDR[7] (net: SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr[4]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr_4) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM/ADDRBWRADDR[8] (net: SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr[5]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr_5) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM/ADDRBWRADDR[9] (net: SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr[6]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_RXBUF/rdAddr_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 ai_sidecar_inst/capture_ram_reg has an input control pin ai_sidecar_inst/capture_ram_reg/ADDRARDADDR[13] (net: ai_sidecar_inst/ram_write_addr[8]) which is driven by a register (ai_sidecar_inst/commit_stage_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 ai_sidecar_inst/capture_ram_reg has an input control pin ai_sidecar_inst/capture_ram_reg/ADDRARDADDR[13] (net: ai_sidecar_inst/ram_write_addr[8]) which is driven by a register (ai_sidecar_inst/commit_stage_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 ai_sidecar_inst/capture_ram_reg has an input control pin ai_sidecar_inst/capture_ram_reg/ADDRARDADDR[13] (net: ai_sidecar_inst/ram_write_addr[8]) which is driven by a register (ai_sidecar_inst/commit_stage_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 ai_sidecar_inst/capture_ram_reg has an input control pin ai_sidecar_inst/capture_ram_reg/ADDRARDADDR[13] (net: ai_sidecar_inst/ram_write_addr[8]) which is driven by a register (ai_sidecar_inst/write_ptr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 ai_sidecar_inst/capture_ram_reg has an input control pin ai_sidecar_inst/capture_ram_reg/ADDRARDADDR[14] (net: ai_sidecar_inst/ram_write_addr[9]) which is driven by a register (ai_sidecar_inst/commit_stage_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 ai_sidecar_inst/capture_ram_reg has an input control pin ai_sidecar_inst/capture_ram_reg/ADDRARDADDR[14] (net: ai_sidecar_inst/ram_write_addr[9]) which is driven by a register (ai_sidecar_inst/commit_stage_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 ai_sidecar_inst/capture_ram_reg has an input control pin ai_sidecar_inst/capture_ram_reg/ADDRARDADDR[14] (net: ai_sidecar_inst/ram_write_addr[9]) which is driven by a register (ai_sidecar_inst/commit_stage_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 ai_sidecar_inst/capture_ram_reg has an input control pin ai_sidecar_inst/capture_ram_reg/ADDRARDADDR[14] (net: ai_sidecar_inst/ram_write_addr[9]) which is driven by a register (ai_sidecar_inst/write_ptr_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM/ADDRBWRADDR[10] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[7]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_7) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM/ADDRBWRADDR[11] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[8]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_8) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#3 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM/ADDRBWRADDR[12] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[9]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_9) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#4 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM/ADDRBWRADDR[13] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[10]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_10) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#5 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM/ADDRBWRADDR[3] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[0]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#6 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM/ADDRBWRADDR[4] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[1]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_1) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#7 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM/ADDRBWRADDR[5] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[2]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#8 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM/ADDRBWRADDR[6] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[3]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_3) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#9 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM/ADDRBWRADDR[7] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[4]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_4) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#10 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM/ADDRBWRADDR[8] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[5]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_5) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#11 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM/ADDRBWRADDR[9] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[6]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#12 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK1/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK1/Mram_RAM/ADDRBWRADDR[10] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[7]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_7) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#13 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK1/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK1/Mram_RAM/ADDRBWRADDR[11] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[8]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_8) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#14 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK1/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK1/Mram_RAM/ADDRBWRADDR[12] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[9]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_9) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#15 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK1/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK1/Mram_RAM/ADDRBWRADDR[13] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[10]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_10) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#16 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK1/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK1/Mram_RAM/ADDRBWRADDR[5] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[2]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#17 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK1/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK1/Mram_RAM/ADDRBWRADDR[6] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[3]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_3) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#18 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK1/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK1/Mram_RAM/ADDRBWRADDR[7] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[4]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_4) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#19 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK1/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK1/Mram_RAM/ADDRBWRADDR[8] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[5]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_5) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#20 Warning
+RAMB18 async control check  
+The RAMB18E1 SiTCP/SiTCP/GMII/GMII_TXBUF/BANK1/Mram_RAM has an input control pin SiTCP/SiTCP/GMII/GMII_TXBUF/BANK1/Mram_RAM/ADDRBWRADDR[9] (net: SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr[6]) which is driven by a register (SiTCP/SiTCP/GMII/GMII_TXBUF/memRdAddr_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+91 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1],
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1],
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TMS,
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0],
+dual_spectrum/gamma/FIFO_spectrum_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+dual_spectrum/gamma/FIFO_spectrum_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0],
+dual_spectrum/neutron/FIFO_spectrum_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+dual_spectrum/neutron/FIFO_spectrum_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0],
+fifo_wave_async_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+fifo_wave_async_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0]
+ (the first 15 of 77 listed).
+Related violations: <none>
+
+
